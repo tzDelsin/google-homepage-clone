@@ -49,6 +49,24 @@
         display: inline-block;
         margin-top: 120px;
       }
+      .searchBox {
+        display: flex;
+      }
+      .searchForm {
+        display: flex;
+
+        align-items: center;
+        width: 100%;
+        po
+      }
+      #input {
+        margin: auto 30px;
+        font-size: 15px;
+        flex: 0 1 612px;
+        border-radius: 50px;
+
+
+      }
     </style>
   </head>
   <body>
@@ -75,11 +93,11 @@
       <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">
     </div>
     <div class="search">
-      <div class="searchbox">
-        <form>
-          <img id="icon" style="height: 50px;" src="https://icon-library.net/images/google-search-magnifying-glass-icon/google-search-magnifying-glass-icon-5.jpg">
-          <input type="search" id="input" placeholder="Search Google or type a URL">
+      <div class="searchBox">
+        <form class="searchForm">
+          <img id="searchIcon" style="height: 50px;" src="https://icon-library.net/images/google-search-magnifying-glass-icon/google-search-magnifying-glass-icon-5.jpg">
           <img id="voiceSearchButton" style="height: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg">
+          <input type="search" id="input" placeholder="Search Google or type a URL">
         </form>
       </div>
     </div>
