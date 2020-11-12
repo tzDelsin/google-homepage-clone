@@ -3,23 +3,58 @@
   <head>
     <title>New Tab</title>
     <style>
+      body {
+        display: block;
+        flex-direction: column;
+      }
+      a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+      }
+      ul {
+        list-style-type: none;
+      }
+      .topNav {
+        flex: 0 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+      }
+      .topNavUl {
+        line-height: 24px;
+        padding: 16px 30px;
+        display: flex;
+        align-items: center;
+      }
+      .topNavUl > li {
+        display: inline-block;
+        margin-left: 15px;
+        font-family: arial;
+        font-size: 81.25%;
+      }
+      #dots {
+        width: 14px;
+
+      }
     </style>
   </head>
   <body>
-    <div class="topnav">
-      <ul>
+    <nav class="topNav">
+      <ul class="topNavUl">
         <li><a href="...">Gmail</a></li>
         <li><a href="...">Images</a></li>
-        <li class="apps"><a href="...">...</a></li>
-        <li class="account logo"><a href="...">...</a></li>
+        <li class="apps"><a href="..."><img id="dots" src="https://www.flaticon.com/svg/static/icons/svg/17/17704.svg"></a></li>
+        <li class="accountLogo"><a href="...">...</a></li>
       </ul>
-    </div>
+    </nav>
     <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">
     <div class="search">
       <div class="searchbox">
-        <img id="icon" style="height: 50px;" src="https://icon-library.net/images/google-search-magnifying-glass-icon/google-search-magnifying-glass-icon-5.jpg">
-        <input type="search" id="input" placeholder="Search Google or type a URL">
-        <img id="voiceSearchButton" style="height: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg">
+        <form>
+          <img id="icon" style="height: 50px;" src="https://icon-library.net/images/google-search-magnifying-glass-icon/google-search-magnifying-glass-icon-5.jpg">
+          <input type="search" id="input" placeholder="Search Google or type a URL">
+          <img id="voiceSearchButton" style="height: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg">
+        </form>
       </div>
     </div>
     <div class="shortcuts">
@@ -35,7 +70,7 @@
         <li id="item9"><a href="...">Add shortcut</a></li>
       </ul>
     </div>
-    <div class="botcustomize">
+    <div class="botCustomize">
       <button href="customize">Customize</button>
     </div>
   </body>
