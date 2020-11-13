@@ -54,8 +54,8 @@
       }
       .searchForm {
         display: flex;
-
-        align-items: center;
+        flex-direction: row;
+        justify-content: center;
         width: 100%;
         po
       }
@@ -63,7 +63,10 @@
         margin: auto 30px;
         font-size: 15px;
         flex: 0 1 612px;
+        height: 44px;
         border-radius: 50px;
+        border-style: none;
+        box-shadow: 0px 0.6px 3.5px 0px #888888
 
 
       }
@@ -96,8 +99,8 @@
       <div class="searchBox">
         <form class="searchForm">
           <img id="searchIcon" style="height: 50px;" src="https://icon-library.net/images/google-search-magnifying-glass-icon/google-search-magnifying-glass-icon-5.jpg">
-          <img id="voiceSearchButton" style="height: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg">
           <input type="search" id="input" placeholder="Search Google or type a URL">
+          <img id="voiceSearchButton" style="height: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg">
         </form>
       </div>
     </div>
