@@ -54,21 +54,38 @@
       }
       .searchForm {
         display: flex;
+        flex: 0 1 561px;
         flex-direction: row;
         justify-content: center;
         width: 100%;
-        po
+        margin: 0 auto 0;
+
       }
       #input {
-        margin: auto 30px;
-        font-size: 15px;
-        flex: 0 1 612px;
+        font-size: 16px;
         height: 44px;
         border-radius: 50px;
         border-style: none;
-        box-shadow: 0px 0.6px 3.5px 0px #888888
+        box-shadow: 0px 0.6px 3.5px 0px #888888;
+        outline: none;
+        box-sizing: border-box;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-left: 52px;
+        padding-right: 40px;
+        width: 561px;
+      }
+      #searchIcon {
 
+        position: absolute;
 
+        align-self: center;
+
+        height: 24px;
+        width: 24px;
+        opacity: 0.8;
       }
     </style>
   </head>
@@ -98,7 +115,7 @@
     <div class="search">
       <div class="searchBox">
         <form class="searchForm">
-          <img id="searchIcon" style="height: 50px;" src="https://icon-library.net/images/google-search-magnifying-glass-icon/google-search-magnifying-glass-icon-5.jpg">
+          <img id="searchIcon" src="https://icon-library.net/images/google-search-magnifying-glass-icon/google-search-magnifying-glass-icon-5.jpg">
           <input type="search" id="input" placeholder="Search Google or type a URL">
           <img id="voiceSearchButton" style="height: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg">
         </form>
