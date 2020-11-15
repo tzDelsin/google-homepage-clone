@@ -7,6 +7,8 @@
         display: block;
         flex-direction: column;
         margin: auto;
+        font-family: Roboto, Ubuntu, Arial, sans-serif;
+        font-size: 81.25%;
       }
       a {
         color: rgb(0, 0, 0);
@@ -96,6 +98,65 @@
         width: 18px;
         opacity: 0.8;
       }
+      .shortcuts {
+
+        column-count: 5;
+        padding-top: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+      }
+      .shortcuts2 {
+        column-count: 4;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .tile {
+        align-items: center;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        height: 96px;
+        margin-bottom: 16px;
+        padding-top: 16px;
+        position: relative;
+        width: 112px;
+      }
+      .tile:hover {
+        background-color: rgb(227, 227, 227);
+      }
+      .tileIcon {
+        align-items: center;
+        border-radius: 50%;
+        display: flex;
+        height: 48px;
+        justify-content: center;
+        width: 48px;
+        background-color: rgb(242, 242, 242);
+      }
+      .shortcutImg {
+        width: 24px;
+        height: 24px;
+      }
+      .shortcutImgPlus {
+        width: 40px;
+        height: 40px;
+      }
+      .tileTitle {
+        align-items: center;
+        border-radius: 12px;
+        display: flex;
+        height: 24px;
+        margin-top: 7px;
+        padding: 0 8px;
+
+      }
+      span {
+        font-weight: 400;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -137,20 +198,76 @@
       </div>
     </div>
     <div class="shortcuts">
-      <ul>
-        <li id="item1"><a href="...">GitHub</a></li>
-        <li id="item2"><a href="...">YouTube</a></li>
-        <li id="item3"><a href="...">freeCodeCamp</a></li>
-        <li id="item4"><a href="...">Tricks</a></li>
-        <li id="item5"><a href="...">Inbox</a></li>
-        <li id="item6"><a href="...">projectOdin</a></li>
-        <li id="item7"><a href="...">Facebook</a></li>
-        <li id="item8"><a href="...">Web Store</a></li>
-        <li id="item9"><a href="...">Add shortcut</a></li>
-      </ul>
+      <a class="tile" href="https://github.com/">
+        <div class="tileIcon"><img class="shortcutImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/480px-Octicons-mark-github.svg.png">
+        </div>
+        <div class="tileTitle">
+          <span>GitHub</span>
+        </div>
+      </a>
+      <a class="tile" href="https://www.theodinproject.com/">
+        <div class="tileIcon"><img class="shortcutImg" src="https://www.theodinproject.com/assets/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg">
+        </div>
+        <div class="tileTitle">
+          <span>the odin proje...</span>
+        </div>
+      </a>
+      <a class="tile" href="https://www.freecodecamp.org/learn/">
+        <div class="tileIcon"><img class="shortcutImg" src="https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.svg">
+        </div>
+        <div class="tileTitle">
+          <span>freeCodeCa...</span>
+        </div>
+      </a>
+      <a class="tile" href="...">
+        <div class="tileIcon"><img class="shortcutImg" src="...">
+        </div>
+        <div class="tileTitle">
+          <span>GitHub</span>
+        </div>
+      </a>
+      <a class="tile" href="...">
+        <div class="tileIcon"><img class="shortcutImg" src="...">
+        </div>
+        <div class="tileTitle">
+          <span>GitHub</span>
+        </div>
+      </a>
     </div>
-    <div class="botCustomize">
-      <button href="customize">Customize</button>
-    </div>
+      <div class="shortcuts2">
+        <a class="tile" href="...">
+          <div class="tileIcon"><img class="shortcutImg" src="...">
+          </div>
+          <div class="tileTitle">
+            <span>GitHub</span>
+          </div>
+        </a>
+        <a class="tile" href="...">
+          <div class="tileIcon"><img class="shortcutImg" src="...">
+          </div>
+          <div class="tileTitle">
+            <span>GitHub</span>
+          </div>
+        </a>
+        <a class="tile" href="...">
+          <div class="tileIcon"><img class="shortcutImg" src="...">
+          </div>
+          <div class="tileTitle">
+            <span>GitHub</span>
+          </div>
+        </a>
+        <a class="tile" href="...">
+          <div class="tileIcon"><img class="shortcutImgPlus" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Plus_symbol.svg/500px-Plus_symbol.svg.png">
+          </div>
+          <div class="tileTitle">
+            <span>Add Shortcut</span>
+          </div>
+        </a>
+      </div>
+  <div>
+    <footer>
+      <button>customize</button>
+
+  </div>
   </body>
 </html>
