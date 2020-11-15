@@ -6,6 +6,7 @@
       body {
         display: block;
         flex-direction: column;
+        margin: auto;
       }
       a {
         color: rgb(0, 0, 0);
@@ -18,7 +19,6 @@
         flex: 0 0 auto;
         display: flex;
         justify-content: flex-end;
-
       }
       .topNavUl {
         margin: 0;
@@ -51,18 +51,18 @@
       }
       .searchBox {
         display: flex;
+        flex-direction: row;
+        justify-content: center;
       }
       .searchForm {
         display: flex;
+        position: relative;
         flex: 0 1 561px;
-        flex-direction: row;
-        justify-content: center;
         width: 100%;
-        margin: 0 auto 0;
-
       }
       #input {
-        position: absolute;
+        z-index: 1;
+        order: 2;
         font-size: 16px;
         height: 44px;
         border-radius: 50px;
@@ -70,33 +70,31 @@
         box-shadow: 0px 0.6px 3.5px 0px #888888;
         outline: none;
         box-sizing: border-box;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
         padding-left: 52px;
         padding-right: 40px;
-        width: 561px;
+        width: 100%;
       }
       #searchIcon {
-        position: absolute;
+        position: relative;
+        left: 200%;
+        padding-top: 13px;
+        z-index: 2;
+        order: 1;
         align-self: center;
         height: 18px;
         width: 18px;
         opacity: 0.8;
-        border-right-width: 40px;
-        padding-right: 500px;
-        padding-top: 45px;
-        padding-bottom: 0px;
       }
       #voiceSearchButton {
-        position: absolute;
+        z-index: 2;
+        position: relative;
+        padding-top: 13px;
+        right: 200%;
+        order: 1;
         align-self: center;
         height: 18px;
         width: 18px;
         opacity: 0.8;
-        padding-top: 40px;
-        padding-left: 500px;
       }
     </style>
   </head>
@@ -125,13 +123,17 @@
     </div>
     <div class="search">
       <div class="searchBox">
+        <div>
+          <img id="searchIcon" src="https://icon-library.net/images/google-search-magnifying-glass-icon/google-search-magnifying-glass-icon-5.jpg">
+        </div>
         <form class="searchForm">
           <input type="search" id="input" placeholder="Search Google or type a URL">
-            <img id="searchIcon" src="https://icon-library.net/images/google-search-magnifying-glass-icon/google-search-magnifying-glass-icon-5.jpg">
-
-            <img id="voiceSearchButton" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg">
-
         </form>
+        <div>
+          <a href="https://support.google.com/chrome/answer/2693767?p=ui_voice_search&hl=en&visit_id=637410690844765748-2624480083&rd=1#change">
+            <img id="voiceSearchButton" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg">
+          </a>
+        </div>
       </div>
     </div>
     <div class="shortcuts">
