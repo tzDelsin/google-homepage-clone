@@ -9,6 +9,11 @@
         margin: auto;
         font-family: Arial, sans-serif;
         font-size: 81.25%;
+        width: 100%;
+
+        position: relative;
+        padding-bottom: 61px;
+
       }
       a {
         color: rgb(0, 0, 0);
@@ -157,6 +162,28 @@
         font-weight: 400;
         text-align: center;
       }
+
+      footer {
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        padding: 20px;
+
+        bottom: 0;
+        width: 100%;
+      }
+      #buttonContainer {
+        padding-right: 50px;
+
+      }
+      #customizeButton {
+        border: none;
+        height: 30px;
+        outline: none;
+        background-color: white;
+        border-radius: 32px;
+        box-shadow: 0px 0.6px 3.5px 0px #888888;
+      }
     </style>
   </head>
   <body>
@@ -179,96 +206,101 @@
         </li>
       </ul>
     </nav>
-    <div class="logoSpace">
-      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">
-    </div>
-    <div class="search">
-      <div class="searchBox">
-        <div>
-          <img id="searchIcon" src="https://icon-library.net/images/google-search-magnifying-glass-icon/google-search-magnifying-glass-icon-5.jpg">
+    <main>
+      <div class="logoSpace">
+          <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">
         </div>
-        <form class="searchForm">
-          <input type="search" id="input" placeholder="Search Google or type a URL">
-        </form>
-        <div>
-          <a href="https://support.google.com/chrome/answer/2693767?p=ui_voice_search&hl=en&visit_id=637410690844765748-2624480083&rd=1#change">
-            <img id="voiceSearchButton" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg">
+      <div class="search">
+          <div class="searchBox">
+            <div>
+              <img id="searchIcon" src="https://icon-library.net/images/google-search-magnifying-glass-icon/google-search-magnifying-glass-icon-5.jpg">
+            </div>
+            <form class="searchForm">
+              <input type="search" id="input" placeholder="Search Google or type a URL" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Google or type a URL'">
+            </form>
+            <div>
+              <a href="https://support.google.com/chrome/answer/2693767?p=ui_voice_search&hl=en&visit_id=637410690844765748-2624480083&rd=1#change">
+                <img id="voiceSearchButton" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+      <div class="shortcuts">
+          <a class="tile" href="https://github.com/">
+            <div class="tileIcon"><img class="shortcutImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/480px-Octicons-mark-github.svg.png">
+              </div>
+            <div class="tileTitle">
+              <span>GitHub</span>
+            </div>
+          </a>
+          <a class="tile" href="https://www.theodinproject.com/">
+            <div class="tileIcon"><img class="shortcutImg" src="https://www.theodinproject.com/assets/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg">
+              </div>
+            <div class="tileTitle">
+              <span>the odin proje...</span>
+            </div>
+          </a>
+          <a class="tile" href="https://www.freecodecamp.org/learn/">
+            <div class="tileIcon"><img class="shortcutImg" src="https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.svg">
+              </div>
+            <div class="tileTitle">
+              <span>freeCodeCa...</span>
+            </div>
+          </a>
+          <a class="tile" href="https://mail.google.com/">
+            <div class="tileIcon"><img class="shortcutImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1280px-Gmail_icon_%282020%29.svg.png">
+              </div>
+            <div class="tileTitle">
+              <span>Inbox (69)</span>
+            </div>
+          </a>
+          <a class="tile" href="https://atom.io/">
+            <div class="tileIcon"><img class="shortcutImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Icon_Atom.svg/615px-Icon_Atom.svg.png">
+              </div>
+            <div class="tileTitle">
+              <span>Atom</span>
+            </div>
           </a>
         </div>
-      </div>
-    </div>
-    <div class="shortcuts">
-      <a class="tile" href="https://github.com/">
-        <div class="tileIcon"><img class="shortcutImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/480px-Octicons-mark-github.svg.png">
+      <div class="shortcuts2">
+            <a class="tile" href="https://code.visualstudio.com/">
+              <div class="tileIcon"><img class="shortcutImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png">
+                </div>
+              <div class="tileTitle">
+                <span>Visual Studio ...</span>
+              </div>
+            </a>
+            <a class="tile" href="https://ubuntu.com/">
+              <div class="tileIcon"><img class="shortcutImg" src="https://seeklogo.com/images/U/ubuntu-logo-8FDEC6A07B-seeklogo.com.png">
+                </div>
+              <div class="tileTitle">
+                <span>Ubuntu</span>
+              </div>
+            </a>
+            <a class="tile" href="https://www.youtube.com/">
+              <div class="tileIcon"><img class="shortcutImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/YouTube_social_white_circle_%282017%29.svg/1024px-YouTube_social_white_circle_%282017%29.svg.png">
+                </div>
+              <div class="tileTitle">
+                <span>YouTube</span>
+              </div>
+            </a>
+            <a class="tile" href="">
+              <div class="tileIcon"><img class="shortcutImgPlus" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Plus_symbol.svg/500px-Plus_symbol.svg.png">
+                </div>
+              <div class="tileTitle">
+                <span>Add Shortcut</span>
+              </div>
+            </a>
           </div>
-        <div class="tileTitle">
-          <span>GitHub</span>
-        </div>
-      </a>
-      <a class="tile" href="https://www.theodinproject.com/">
-        <div class="tileIcon"><img class="shortcutImg" src="https://www.theodinproject.com/assets/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg">
-          </div>
-        <div class="tileTitle">
-          <span>the odin proje...</span>
-        </div>
-      </a>
-      <a class="tile" href="https://www.freecodecamp.org/learn/">
-        <div class="tileIcon"><img class="shortcutImg" src="https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.svg">
-          </div>
-        <div class="tileTitle">
-          <span>freeCodeCa...</span>
-        </div>
-      </a>
-      <a class="tile" href="https://mail.google.com/">
-        <div class="tileIcon"><img class="shortcutImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1280px-Gmail_icon_%282020%29.svg.png">
-          </div>
-        <div class="tileTitle">
-          <span>Inbox (69)</span>
-        </div>
-      </a>
-      <a class="tile" href="https://atom.io/">
-        <div class="tileIcon"><img class="shortcutImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Icon_Atom.svg/615px-Icon_Atom.svg.png">
-          </div>
-        <div class="tileTitle">
-          <span>Atom</span>
-        </div>
-      </a>
-    </div>
-    <div class="shortcuts2">
-        <a class="tile" href="https://code.visualstudio.com/">
-          <div class="tileIcon"><img class="shortcutImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png">
-            </div>
-          <div class="tileTitle">
-            <span>Visual Studio ...</span>
-          </div>
-        </a>
-        <a class="tile" href="https://ubuntu.com/">
-          <div class="tileIcon"><img class="shortcutImg" src="https://seeklogo.com/images/U/ubuntu-logo-8FDEC6A07B-seeklogo.com.png">
-            </div>
-          <div class="tileTitle">
-            <span>Ubuntu</span>
-          </div>
-        </a>
-        <a class="tile" href="https://www.youtube.com/">
-          <div class="tileIcon"><img class="shortcutImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/YouTube_social_white_circle_%282017%29.svg/1024px-YouTube_social_white_circle_%282017%29.svg.png">
-            </div>
-          <div class="tileTitle">
-            <span>YouTube</span>
-          </div>
-        </a>
-        <a class="tile" href="">
-          <div class="tileIcon"><img class="shortcutImgPlus" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Plus_symbol.svg/500px-Plus_symbol.svg.png">
-            </div>
-          <div class="tileTitle">
-            <span>Add Shortcut</span>
-          </div>
-        </a>
-      </div>
-    <footer class="footer">
-      <div>
-        <button>customize</button>
+    </main>
+    <footer>
+      <div id="buttonContainer">
+        <button id="customizeButton">customize</button>
+        <img
       </div>
     </footer>
+
+
   </div>
   </body>
 </html>
