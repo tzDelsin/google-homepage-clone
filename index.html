@@ -5,15 +5,12 @@
     <style>
       body {
         display: block;
-        flex-direction: column;
         margin: auto;
         font-family: Arial, sans-serif;
         font-size: 81.25%;
         width: 100%;
-
         position: relative;
         padding-bottom: 61px;
-
       }
       a {
         color: rgb(0, 0, 0);
@@ -38,6 +35,9 @@
         margin-left: 15px;
         font-family: arial;
         font-size: 81.25%;
+      }
+      .topNavUl > li:hover {
+        text-decoration: underline;
       }
       #dots {
         width: 16px;
@@ -162,31 +162,41 @@
         font-weight: 400;
         text-align: center;
       }
-
       footer {
         display: flex;
         justify-content: flex-end;
         position: fixed;
         padding: 20px;
-
         bottom: 0;
         width: 100%;
       }
       #buttonContainer {
         padding-right: 50px;
-
       }
       #customizeButton {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
         border: none;
         height: 30px;
         outline: none;
         background-color: white;
         border-radius: 32px;
         box-shadow: 0px 0.6px 3.5px 0px #888888;
+        color: rgb(26, 115, 232);
+      }
+      #customizeButton:hover {
+        background-color: rgb(250, 250, 250);
+        cursor: pointer;
+      }
+      #customizeIcon {
+        width: 16px;
+        height: 16px;
       }
     </style>
   </head>
   <body>
+    <!--Navigation-->
     <nav class="topNav">
       <ul class="topNavUl">
         <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Gmail</a>
@@ -206,6 +216,7 @@
         </li>
       </ul>
     </nav>
+    <!--Main-->
     <main>
       <div class="logoSpace">
           <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">
@@ -293,14 +304,12 @@
             </a>
           </div>
     </main>
+    <!--Footer-->
     <footer>
       <div id="buttonContainer">
-        <button id="customizeButton">customize</button>
-        <img
+        <button id="customizeButton">
+          <img id="customizeIcon" src="https://cdn.iconscout.com/icon/free/png-256/pencil-pen-ui-erase-tool-interface-ui-6-15152.png">Customize</button>
       </div>
     </footer>
-
-
-  </div>
   </body>
 </html>
